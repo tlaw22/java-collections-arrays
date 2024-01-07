@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        ArrayList <String> words = new ArrayList<String>();
+        ArrayList<String> words = new ArrayList<String>();
         words.add("hello there");
         words.add("Jimmy");
         String item1 = words.get(0);
@@ -13,14 +13,24 @@ public class App {
         System.out.println(item1 + item2);
 
         LinkedList<Integer> numbers = new LinkedList<Integer>();
-        numbers.add(5); 
+        numbers.add(5);
         numbers.add(100);
         numbers.add(200);
         numbers.add(45);
         numbers.add(1000);
         numbers.removeLast();
-        for(int number : numbers) {
+        for (int number : numbers) {
             System.out.println(number);
         }
     }
 }
+/*
+ * Choose ArrayList when:
+ * --Random access and searches are frequent.
+ * --The collection is mostly read-heavy (fewer modifications).
+ * --Memory usage is a concern.
+ * Choose LinkedList when:
+ * -- Frequent insertions/removals in the middle are needed.
+ * -- Implementing data structures that rely on linked elements.
+ * 
+ */
